@@ -18,18 +18,15 @@ import {
   Avatar,
   Badge,
   Content,
-  // Favicon,
   Initials,
   KeyboardShortcut,
   ServerButtonWrapper,
   ServerList,
   Wrapper
-  // ServerIconWrapper
 } from "./styles";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import { useSorting } from "./useSorting";
 import { ServerLogo } from "./ServerLogo";
-// const serverLogo = require("./logo-server.png");
 
 type ServerButtonProps = {
   url: string;
