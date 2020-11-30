@@ -17,6 +17,7 @@ import {
   AddServerButtonLabel,
   Avatar,
   Badge,
+  Favicon,
   Content,
   Initials,
   KeyboardShortcut,
@@ -99,7 +100,7 @@ const ServerButton: FC<ServerButtonProps> = ({
     >
       <Avatar isSelected={isSelected}>
         <Initials visible={!favicon}>{initials}</Initials>
-        {!!favicon && <ServerLogo />}
+        <Favicon draggable="false" src={favicon ?? ""} visible={!!favicon} />
       </Avatar>
       {mentionCount && <Badge>{mentionCount}</Badge>}
       {shortcutNumber && (
